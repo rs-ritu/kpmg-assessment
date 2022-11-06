@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energy</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href ="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#header").load("../components/header.html");
+            $("#heroCarousel").load("../components/heroCarousel.html");
+            $("#about").load("../components/about.html");
+            $("#services").load("../components/services.html");
+            $("#testimonial").load("../components/testimonial.html");
+            $("#gallery").load("../components/gallery.html");
+            $("#brandLogos").load("../components/brand-logos.html");
+            $("#footer").load("../components/footer.html");
+       });
+
+        function responsiveHeader(){
+            var nav_id = document.getElementById("top-navigation");
+            if(nav_id.className === "topnav"){
+                nav_id.className += " responsive";              
+            }
+            else{
+                nav_id.className = "topnav";
+            }
+        }
+    </script>
+</head>
+<body>
+    <header id="header" class="global-header"></header>
+    <main class="body">
+    <section id="heroCarousel" class="hero_Carousel"></section>
+    <section id="about" class="about-section"></section>
+    <section id="services" class="services-section"></section>
+    <section id="testimonial" class="testimonial-section"></section>
+    <section id="gallery" class="gallery-section"></section>
+    <section id="brandLogos" class="brandLogo-section"></section>
+    </main>
+    <footer id="footer"></footer>
+</body>
+</html>
